@@ -1,9 +1,10 @@
 // Header.js
 import React from 'react';
 import styled from 'styled-components';
-import { ReactComponent as Explore } from '../explore.svg';
-import { ReactComponent as Avatar } from '../avatar.svg';
-import { ReactComponent as Compass } from '../compass.svg';
+import { ReactComponent as Explore } from '../img/lnr-earth.svg';
+import { ReactComponent as Avatar } from '../img/lnr-heart-pulse.svg';
+import { ReactComponent as Compass } from '../img/lnr-user.svg';
+
 const Nav = styled.div`
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
@@ -60,13 +61,13 @@ function Header() {
         </NavCenter>
         <NavRight>
           <MenuLink href="#">
-            <Compass />
-          </MenuLink>
-          <MenuLink href="#">
             <Explore />
           </MenuLink>
           <MenuLink href="#">
-            <Avatar />
+            <Avatar/>
+          </MenuLink>
+          <MenuLink href="#">
+            <Compass/>
           </MenuLink>
         </NavRight>
       </NavHeader>
